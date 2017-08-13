@@ -71,18 +71,18 @@
         <input type="button" value="Поиск гостиницы в седоне">
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
               <label for="date-checkin">Дата заезда:</label>
-              <input type="date" name="date" id="date-checkin" value="24 Апреля 2017">
+              <input type="date" name="date" id="date-checkin" value="2017-04-24">
               <label for="date-checkout">Дата выезда:</label>
-              <input type="date" name="date" id="date-checkout" value="4 июля 2017">
+              <input type="date" name="date" id="date-checkout" value="2017-06-04">
             <div class="half-width">
               <label for="number-people">Взрослые:</label>
-              <input type="number" name="number" id="number-people" value="2">
+              <input type="number" name="number" id="number-people" value="2" min="1">
             </div>
             <div class="half-width">
               <label for="number-children">Дети:</label>
-              <input type="number" name="number" id="number-children" value="0">
+              <input type="number" name="number" id="number-children" value="0" min="0">
             </div>
-            <input type="submit" href="#" value="Найти">
+            <input type="submit" value="Найти">
         </form>
       </section>
 
@@ -103,7 +103,7 @@
       <p class="footer-copyright">
         <b>WEBSITE BY:</b>
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="html/logo.psd">HTML Academy
+          <img src="html/logo.psd" alt="HTML Academy">
         </a>
       </p>
     </footer>
