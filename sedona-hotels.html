@@ -54,8 +54,7 @@
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
-            <p>здесь должен отображаться диапазон цены в сутки, но я пока не знаю, как его сделать</p>
-            <input type="range" min="0" max="3000">
+            <input type="range" min="0" max="3000" step="1">
           </fieldset>
           <button type="submit" class="filter-button button">Показать</button>
         </form>
@@ -66,25 +65,28 @@
           <p class="search-result">Найдено: 3</p>
           <p class="sorting-title">Сортировка:</p>
           <ul class="sorting">
-              <li class="sort-parameter sorting-current">По цене</li>
-              <li class="sort-parameter"><a href="#">По типу</a></li>
-              <li class="sort-parameter"><a href="#">По рейтингу</a></li>
+              <li class="sort-parameter sorting-current"><a class="sort-price">По цене</a></li>
+              <li class="sort-parameter"><a class="sort-type">По типу</a></li>
+              <li class="sort-parameter"><a class="sort-rating">По рейтингу</a></li>
           </ul>
           <div class="arrows">
-            <p>место под стрелки</p>
+            <ul class="arrows-list">
+              <li class="arrows-item"><a class="arrow-up">Стрелка вверх</a></li>
+              <li class="arrows-item"><a class="arrow-down">Стрелка вниз</a></li>
+            </ul>
           </div>
         <h2 class="visually-hidden">Список предлагаемых гостиниц</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
+            <div class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-1.jpg" width="135" height="90" alt="Гостиница «Amara Resort & Spa»">
+              </a>
+            </div>
+              <div class="description">
               <h3>
                 <a href="catalog-item.html">Amara Resort & SPA</a>
               </h3>
-              <div class="catalog-item-image">
-                <a href="catalog-item.html">
-                  <img src="img/product-1.jpg" width="135" height="90" alt="Гостиница «Amara Resort & Spa»">
-                </a>
-              </div>
-              <div class="type-hotel-and-price">
                 <p class="type-hotel">Гостиница</p>
                 <p class="price">От 4000 Р.</p>
                 <a class="button" href="catalog-item.html">Подробнее</a>
@@ -97,15 +99,15 @@
           </li>
 
           <li class="catalog-item">
-              <h3>
+            <div class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-2.jpg" width="135" height="90" alt="Мотель «DESERT QUAIL INN»">
+              </a>
+            </div>
+              <div class="description">
+                <h3>
                 <a href="catalog-item.html">DESERT QUAIL INN</a>
-              </h3>
-              <div class="catalog-item-image">
-                <a href="catalog-item.html">
-                  <img src="img/product-2.jpg" width="135" height="90" alt="Мотель «DESERT QUAIL INN»">
-                </a>
-              </div>
-              <div class="type-hotel-and-price">
+                </h3>
                 <p class="type-hotel">Мотель</p>
                 <p class="price">От 3000 Р.</p>
                 <a class="button" href="catalog-item.html">Подробнее</a>
@@ -118,19 +120,19 @@
           </li>
 
           <li class="catalog-item">
-              <h3>
-                <a href="catalog-item.html">VILLAS AT POCO DIABLO</a>
-              </h3>
-              <div class="catalog-item-image">
-                <a href="catalog-item.html">
-                  <img src="img/product-3.jpg" width="135" height="90" alt="Апартаменты VILLAS AT POCO DIABLO">
-                </a>
-              </div>
-              <div class="type-hotel-and-price">
-                <p class="type-hotel">Апартаменты</p>
-                <p class="price">От 2000 Р.</p>
-                <a class="button" href="catalog-item.html">Подробнее</a>
-                <a class="button" href="#">Забронировать</a>
+            <div class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-3.jpg" width="135" height="90" alt="Апартаменты VILLAS AT POCO DIABLO">
+              </a>
+            </div>
+              <div class="description">
+                <h3>
+                  <a href="catalog-item.html">VILLAS AT POCO DIABLO</a>
+                </h3>
+                  <p class="type-hotel">Апартаменты</p>
+                  <p class="price">От 2000 Р.</p>
+                  <a class="button" href="catalog-item.html">Подробнее</a>
+                  <a class="button" href="#">Забронировать</a>
               </div>
               <div class="stars-rating">
                 <img src="two-stars" alt="Две звезды">
