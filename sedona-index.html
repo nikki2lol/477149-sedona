@@ -76,7 +76,7 @@
       </section>
 
       <section class="appointment">
-        <h4 class="appointment-title">Заинтересовались?</h4>
+        <h2 class="appointment-title">Заинтересовались?</h2>
         <p class="appointment-content">Укажите предполагаемые даты поездки, и мы покажем вам наилучшие предложения гостиниц в Седоне</p>
         <button value="Поиск гостиницы в седоне" name="hotel-look">Поиск гостиницы в Седоне</button>
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
@@ -89,26 +89,29 @@
             <div class="half-width">
               <p class="number-adult">Взрослые:</p>
               <div class="number-adult-current">
-                <button class="minus">-</button>
+                <input type="button" class="minus" value="-">
                   <p class="result">2</p>
-                <button class="plus">+</button>
+                <input type="button" class="plus" value="+">
               </div>
             </div>
             <div class="half-width">
               <p class="number-children">Дети:</p>
               <div class="number-children-current">
-                <button class="minus">-</button>
+                <input type="button" class="minus" value="-">
                   <p class="result">0</p>
-                <button class="plus">+</button>
+                <input type="button" class="plus" value="+">
               </div>
             </div>
             <input type="submit" value="Найти">
         </form>
       </section>
 
-      <div class="map">
-        <img src="map.html" width="1200" height="600" alt="Карта">
-      </div>
+      <section class="map">
+        <img src="sedona-map.html" usemap="#sedona-map">
+          <map name="sedona-map" id="sedona-map">
+            <area shape="rect">
+          </map>
+      </section>
     </main>
 
     <footer class="main-footer">
