@@ -3,13 +3,49 @@ body {
     line-height: normal;
     color: black;
     font-weight: normal;
-    
+    font-family: "PT Sans", "Arial", serif;
 }
 
-h1{
-
+h1 .visually-hidden {
+    font-size: 21px;
+    line-height: normal;
+    color: black;
+    font-weight: bold;
+    font-family: "PT Sans", serif;
 }
 
-h2{
+h2 .appointment-title {
+    font-size: 30px;
+    line-height: 36px;
+    color: black;
+    font-weight: bold;
+    font-family: "PT Sans", serif;
+}
 
+h2.visually-hidden {
+    font-size: 21px;
+    line-height: normal;
+    color: black;
+    font-weight: bold;
+    font-family: "PT Sans", serif;
+}
+
+/* Вставил пока рамку, чтобы лучше видеть элементы*/
+div .propeties-item-image {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-image: url(img/sprite-icons.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.div calendar {
+    width: 21px;
+    height: 22px;
+    margin: 0 auto;
+    background-image: url(img/calendar.svg)
+    background-repeat: no-repeat;
+    background-size: 100%;
 }

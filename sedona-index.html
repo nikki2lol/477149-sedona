@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="logo.png" width="140" height="70" alt="Логотип «Седона»">
+          <img src="img/logo.png" width="140" height="70" alt="Логотип «Седона»">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
@@ -23,7 +23,7 @@
     <main class="container">
 
       <section class="background-images">
-        <img src="intro.jpg" width="1200" height="780" alt="intro">
+        <img src="img/intro.jpg" width="1200" height="780" alt="intro">
       </section>
 
       <h1 class="visually-hidden">«Седона»</h1>
@@ -36,18 +36,21 @@
               <h3 class="features-item-title">Настоящий городок</h3>
               <p class="features-item-number">-№1-</p>
                 <p class="features-item-conent">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-                <img src="preview-photo1.jpg" width="800" height="256">
+                <img src="img/preview-photo1.jpg" width="800" height="256">
               <div class="properties">
                 <ul class="properties-list">
                   <li class="properties-item">
+                    <div class="propeties-item-image firstly"></div>
                     <h3 class="properties-item-title">Жилье</h3>
                     <p class="properties-item-content">Рекомендуем пожить в настоящем мотеде, все как в кино!</p>
                   </li>
                   <li class="properties-item">
+                    <div class="propeties-item-image secondly"></div>
                     <h3 class="properties-item-title">Еда</h3>
                     <p class="properties-item-content">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                   </li>
                   <li class="properties-item">
+                    <div class="propeties-item-image thirdly"></div>
                     <h3 class="properties-item-title">Сувениры</h3>
                     <p class="properties-item-content">Не только китайского, но и местного производства!</p>
                   </li>
@@ -55,7 +58,7 @@
               </div>
               </li>
             <li class="features-item second-feature">
-              <img src="preview-photo2.jpg" width="800" height="256">
+              <img src="img/preview-photo2.jpg" width="800" height="256">
               <h3 class="features-item-title">Там есть мост дьявола</h3>
               <p class="features-item-number">-№2-</p>
               <p class="features-item-content">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -85,10 +88,10 @@
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
               <label for="date-checkin">Дата заезда:</label>
               <input type="date" name="date" id="date-checkin" value="2017-04-24">
-                <div class="calendar">место для календаря</div>
+                <div class="calendar"></div>
               <label for="date-checkout">Дата выезда:</label>
               <input type="date" name="date" id="date-checkout" value="2017-06-04">
-                <div class="calendar">место для календаря</div>
+                <div class="calendar"></div>
             <div class="half-width">
               <p class="number-adult">Взрослые:</p>
               <div class="number-adult-current">
@@ -110,7 +113,7 @@
       </section>
 
       <section class="map">
-        <img src="map.jpg" usemap="#sedona-map" width="1200" height="475">
+        <img src="img/map.jpg" usemap="#sedona-map" width="1200" height="475">
           <map name="sedona-map" id="sedona-map">
             <area shape="rect">
           </map>
@@ -120,16 +123,16 @@
     <footer class="main-footer">
       <p class="hashtag">#VISITSEDONA</p>
       <div class="footer-social">
-        <ul>
-        <li><a class="social-button" href="#">Twitter</a></li>
-        <li><a class="social-button" href="#">Facebook</a></li>
-        <li><a class="social-button" href="#">Youtube</a></li>
-      </ul>
+        <div class="footer-social">
+          <a class="social-btn social-btn-tw" href="#">Twitter</a>
+          <a class="social-btn social-btn-fb" href="#">Facebook</a>
+          <a class="social-btn social-btn-yt" href="#">Youtube</a>
+        </div>
       </div>
       <p class="footer-copyright">
         <b>WEBSITE BY:</b>
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="logo-htmlacademy.svg" alt="HTML Academy">
+          <img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="115" height="41">
         </a>
       </p>
     </footer>
