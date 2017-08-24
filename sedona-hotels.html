@@ -23,19 +23,25 @@
     <main class="container">
       <h1 class="visually-hidden">Гостиницы</h1>
       <section class="filters">
-        <h2 class="visually-hidden">Фильтры товаров</h2>"
+        <h2 class="visually-hidden">Фильтры товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" checked>Бассейн
+                <label for="input-checkbox-1">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="input-checkbox-1" checked>Бассейн
+                </label>
               </li>
               <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">Парковка
+                <label for="input-checkbox-2">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="input-checkbox-2">Парковка
+                </label>
               </li>
               <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi" >Wi-fi
+                <label for="input-checkbox-3">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi" id="input-checkbox-3">Wi-fi
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -43,13 +49,19 @@
             <legend>Тип жилья:</legend>
             <ul>
             <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="inn" checked>Гостиница
+              <label for="input-checkbox-4">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="inn" id="input-checkbox-4" checked>Гостиница
+              </label>
             </li>
             <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked>Мотель
+              <label for="input-checkbox-5">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="input-checkbox-5" checked>Мотель
+              </label>
             </li>
             <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" checked>Апартаменты
+              <label for="input-checkbox-6">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="input-checkbox-6" checked>Апартаменты
+              </label>
             </li>
           </ul>
           </fieldset>
@@ -71,13 +83,13 @@
           <p class="search-result">Найдено: 3</p>
           <p class="sorting-title">Сортировка:</p>
           <ul class="sorting">
-              <li class="sort-parameter sorting-current"><a class="sort-price">По цене</a></li>
-              <li class="sort-parameter"><a class="sort-type">По типу</a></li>
-              <li class="sort-parameter"><a class="sort-rating">По рейтингу</a></li>
+              <li class="sort-parameter sorting-current"><a href="#" class="sort-price">По цене</a></li>
+              <li class="sort-parameter"><a href="#" class="sort-type">По типу</a></li>
+              <li class="sort-parameter"><a href="#" class="sort-rating">По рейтингу</a></li>
           </ul>
           <div class="arrows">
-              <a class="arrow-up"><img src="img/icon-up-dir.svg"></a>
-              <a class="arrow-down"><img src="img/icon-down-dir.svg"></a>
+              <a href="#" class="arrow-up"><img src="img/icon-up-dir.svg"></a>
+              <a href="#" class="arrow-down"><img src="img/icon-down-dir.svg"></a>
           </div>
         <h2 class="visually-hidden">Список предлагаемых гостиниц</h2>
         <ul class="catalog-list">
