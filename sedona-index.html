@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/logo.png" width="140" height="70" alt="Логотип «Седона»">
+          <img src="img/logo-sedona.png" width="140" height="70" alt="Логотип «Седона»">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
@@ -28,55 +30,69 @@
 
       <h1 class="visually-hidden">«Седона»</h1>
       <section class="features">
-        <b class="five-features">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</b>
-        <p class="five-features">Рассмотрим 5 причин, по кторым седона круче, чем Гранд Каньон</p>
+        <p class="five-features-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="five-features-content">Рассмотрим 5 причин, по кторым седона круче, чем Гранд Каньон</p>
         <h2 class="visually-hidden">Преимущества</h2>
           <ul class="features-list">
             <li class="features-item first-feature">
+            <div class="container-feature">
               <h3 class="features-item-title">Настоящий городок</h3>
               <p class="features-item-number">-№1-</p>
                 <p class="features-item-conent">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-                <img src="img/preview-photo1.jpg" width="800" height="256">
+            </div>
+            <div class="container-feature-image">
+                <img src="img/preview-photo1.jpg" width="800" height="300">
+            </div>
               <div class="properties">
                 <ul class="properties-list">
                   <li class="properties-item">
-                    <div class="propeties-item-image firstly"></div>
-                    <h3 class="properties-item-title">Жилье</h3>
-                    <p class="properties-item-content">Рекомендуем пожить в настоящем мотеде, все как в кино!</p>
+                    <div class="properties-item-image firstly">Изображение дома</div>
+                      <h3 class="properties-item-title">Жилье</h3>
+                      <p class="properties-item-content">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </li>
                   <li class="properties-item">
-                    <div class="propeties-item-image secondly"></div>
-                    <h3 class="properties-item-title">Еда</h3>
-                    <p class="properties-item-content">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    <div class="properties-item-image secondly">Изображение Бургера</div>
+                      <h3 class="properties-item-title">Еда</h3>
+                      <p class="properties-item-content">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                   </li>
                   <li class="properties-item">
-                    <div class="propeties-item-image thirdly"></div>
-                    <h3 class="properties-item-title">Сувениры</h3>
-                    <p class="properties-item-content">Не только китайского, но и местного производства!</p>
+                    <div class="properties-item-image thirdly">Изображение Сувенира</div>
+                      <h3 class="properties-item-title">Сувениры</h3>
+                      <p class="properties-item-content">Не только китайского, но и местного производства!</p>
                   </li>
                 </ul>
               </div>
               </li>
             <li class="features-item second-feature">
-              <img src="img/preview-photo2.jpg" width="800" height="256">
-              <h3 class="features-item-title">Там есть мост дьявола</h3>
-              <p class="features-item-number">-№2-</p>
-              <p class="features-item-content">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <div class="container-feature-image">
+                <img src="img/preview-photo2.jpg" width="800" height="300">
+              </div>
+              <div class="container-feature">
+                <h3 class="features-item-title">Там есть мост дьявола</h3>
+                <p class="features-item-number">-№2-</p>
+                <p class="features-item-content">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              </div>
             </li>
             <li class="features-item another-feature">
-              <h3 class="features-item-title">Небольшая площадь</h3>
-              <p class="features-item-number">-№3-</p>
-              <p class="features-item-content">Все достопримечательности находятся очень близко</p>
+              <div class="feature-item-container">
+                <h3 class="features-item-title">Небольшая площадь</h3>
+                <p class="features-item-number">-№3-</p>
+                <p class="features-item-content">Все достопримечательности находятся очень близко</p>
+              </div>
             </li>
             <li class="features-item another-feature">
-              <h3 class="features-item-title">Красивая дорога</h3>
-              <p class="features-item-number">-№4-</p>
-              <p class="features-item-content">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+              <div class="feature-item-container">
+                <h3 class="features-item-title">Красивая дорога</h3>
+                <p class="features-item-number">-№4-</p>
+                <p class="features-item-content">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
             </li>
             <li class="features-item another-feature">
-              <h3 class="features-item-title">Мало туристов</h3>
-              <p class="features-item-number">-№5-</p>
-              <p class="features-item-content">Большинство едет в Гранд Каньон и толпится там</p>
+              <div class="feature-item-container">
+                <h3 class="features-item-title">Мало туристов</h3>
+                <p class="features-item-number">-№5-</p>
+                <p class="features-item-content">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
             </li>
           </ul>
       </section>
@@ -125,17 +141,17 @@
 
     <footer class="main-footer">
       <p class="hashtag">#VISITSEDONA</p>
-      <div class="footer-social">
         <div class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Twitter</a>
-          <a class="social-btn social-btn-fb" href="#">Facebook</a>
-          <a class="social-btn social-btn-yt" href="#">Youtube</a>
+          <ul>
+            <li><a class="social-btn social-btn-tw" href="#">Twitter</a></li>
+            <li><a class="social-btn social-btn-fb" href="#">Facebook</a></li>
+            <li><a class="social-btn social-btn-yt" href="#">Youtube</a></li>
+          </ul>
         </div>
-      </div>
       <p class="footer-copyright">
-        <b>WEBSITE BY:</b>
+        <b>Website by:</b>
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="115" height="41">
+          <img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="120" height="40">
         </a>
       </p>
     </footer>

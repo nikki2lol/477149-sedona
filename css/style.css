@@ -1,51 +1,262 @@
+html,
 body {
+    maring: 0;
+    padding: 0;
+    width: 1200px;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
-    line-height: normal;
-    color: black;
-    font-weight: normal;
-    font-family: "PT Sans", "Arial", serif;
+    line-height: 21px;
+    font-weight: 400;
+    color: #333333;
+    text-transform: uppercase;
+    background-color: white;
 }
 
-h1 .visually-hidden {
+a {
+    text-decoration: none;
+}
+
+.site-navigation,
+.features-list,
+.properties-list,
+.checkbox-family-1,
+.checkbox-family-2,
+.sorting,
+.catalog-list,
+.footer-social ul {
+    list-style: none;
+}
+
+.main-navigation a,
+.footer-social a,
+.catalog-list a {
+    color: #000000;
+}
+
+.main-navigation a {
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.main-navigation a:hover {
+    color: #81b3d2;
+}
+
+.main-navigation a:focus {
+    color: #cacaca;
+}
+
+.main-navigation a:active {
+    color: #766357;
+}
+
+.sorting a {
+    color: #cacaca;
+    text-decoration: underline #81b3d2 dashed;
+}
+.sorting a:hover {
+    color: #81b3d2;
+    text-decoration: underline #81b3d2 dashed;
+}
+
+.sorting a:focus {
+    color: #000000;
+}
+
+.sorting a:active {
+    color: #81b3d2;
+}
+
+.features p.five-features-title {
     font-size: 21px;
-    line-height: normal;
-    color: black;
-    font-weight: bold;
-    font-family: "PT Sans", serif;
+    font-weight: 700;
+    text-height: 26px;
+    text-align: center;
 }
 
-h2 .appointment-title {
-    font-size: 30px;
-    line-height: 36px;
-    color: black;
-    font-weight: bold;
-    font-family: "PT Sans", serif;
+.features p.five-features-content {
+    color: #333333;
+    text-height: 26px;
+    text-align: center;
 }
 
-h2.visually-hidden {
+.container-feature {
+    width: 400px;
+    height: 300px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    text-align: center;
+}
+
+.first-feature h3,
+.second-feature h3 {
     font-size: 21px;
-    line-height: normal;
-    color: black;
-    font-weight: bold;
-    font-family: "PT Sans", serif;
+    text-height: 21px;
+    font-weight: 700px;
 }
 
-/* Вставил пока рамку, чтобы лучше видеть элементы*/
-div .propeties-item-image {
+.feature-item-container {
+    width: 400px;
+    height: 255px;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.properties {
+    text-align: center;
+}
+
+.properties h3,
+.another-feature h3 {
+    font-size: 21px;
+    font-weight: 700;
+    text-height: 21px;
+    color: #000000;
+}
+
+.properties-item-image {
     width: 75px;
     height: 75px;
-    margin: 0 auto;
+    background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
     border: 1px solid black;
-    background-image: url(img/sprite-icons.png);
+}
+
+.firstly {
+    background-position:
+}
+
+.secondly {
+    background-position:
+}
+
+.thirdly {
+    background-position:
+}
+
+
+.appointment h2 {
+    font-size: 30px;
+    text-height: 36px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.apointment p.apointment-content {
+    text-height: 24px;
+}
+
+.appointment button {
+    width: 570px;
+    height: 85px;
+    font-size: 21px;
+    font-weight: 700;
+    text-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #766357;
+    color: #ffffff;
+}
+
+.appointment button:hover {
+    background-color: #604e43;
+}
+
+.appointment button:focus {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #503e33;
+}
+
+.appointment-form {
+    text-height: 26px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.appointment input[type="date"] {
+    font: inherit;
+    background-color: #f2f2f2;
+    outline: none;
+}
+
+.appointment input[type="date"]:hover {
+    background-color: #ebebeb;
+}
+
+.appointment input[type="date"]:focus {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+}
+
+.appointment input[type="button"] {
+    background-color: #ffffff;
+    color: #a9a9a9;
+}
+
+.appointment input[type="button"]:hover {
+    color: #000000;
+}
+
+.appointment input[type="button"]:focus {
+    color: #81b3d2;
+}
+
+.appointment input[type="submit"] {
+    width: 458px;
+    height: 58px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+    text-height: 26px;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    outline: none;
+}
+
+.appointment input[type="submit"]:hover {
+    background-color: #669ec0;
+}
+
+.appointment input[type="submit"]:focus {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer b {
+    text-height: 26px;
+}
+
+.main-footer p.hashtag {
+    font-size: 21px;
+    font-weight: 700;
+    text-height: 26px;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+/* стили для sedona-hotels.html */
+
+
+
+.background-image-filters {
+    background-color: #333333;
+    background-image: url("img/filter-background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-.div calendar {
-    width: 21px;
-    height: 22px;
-    margin: 0 auto;
-    background-image: url(img/calendar.svg)
-    background-repeat: no-repeat;
-    background-size: 100%;
+.filters legend {
+    font-size: 16px;
+    text-height: 21px;
+    font-weight: 700px;
+    color: #FFFFFF;
+}
+
+.filters li {
+  text-height: 21px;
+  color: #FFFFFF;
 }
