@@ -257,6 +257,92 @@ a {
 }
 
 .filters li {
-  text-height: 21px;
-  color: #FFFFFF;
+    text-height: 21px;
+    color: #FFFFFF;
+}
+
+.filter-option input[type="checkbox"],
+.filter-option input[type="checkbox"]:hover {
+
+}
+
+.filter-option input[type="checkbox"]:focus {
+
+}
+
+.filters button {
+    width: 132px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.filters button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #000000;
+}
+
+.catalog p.search-result {
+    font-size: 21px;
+    font-weight: 700;
+    text-height: 26px;
+}
+
+.catalog p.sorting-title,
+.sort-parameter {
+    font-size: 12px;
+    text-height: 18px;
+}
+
+.description div.rating {
+    width: 110px;
+    height: 27px;
+    background-color: #f2f2f2;
+}
+
+.description a {
+    color: #000000;
+}
+
+.description a:hover {
+    color: #81b3d2;
+}
+
+.description a:focus {
+    color: #cacaca;
+}
+
+a.button-info {
+    width: 110px;
+    height: 27px;
+    background-color: #81b3d2;
+    color: white;
+}
+
+a.button-info:hover {
+    background-color: #669ec0;
+    color: white;
+}
+
+a.button-info:focus {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+a.button-buy {
+    width: 142px;
+    height: 27px;
+    background-color: #766357;
+    color: white;
+}
+
+a.button-buy:hover {
+    background-color: #604e43;
+    color: white;
+}
+
+a.button-buy:focus {
+    background-color: #503e33;
+    color: rgba (255, 255, 255, 0.3)
 }
