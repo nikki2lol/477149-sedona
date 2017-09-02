@@ -8,65 +8,50 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo-sedona.png" width="140" height="70" alt="Логотип «Седона»">
-        </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="content.html">Фото и видео</a></li>
+          <li><img src="img/logo-sedona.png" width="140" height="70" alt="Логотип «Седона»"></li>
           <li><a href="map.html">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
+
+
     <main class="container">
 
-      <section class="background-images">
-        <img src="img/intro.jpg" width="1200" height="780" alt="Welcome to the gorgeous Sedona. «Because the Grand Canyon sucks!»">
-      </section>
+      <div class="main-background">
+        <div class="bg-text-container"><img src="img/bg-intro-text.png" width="460" height="350"></div>
+        <div class="bg-mask-container"></div>
+      </div>
 
       <h1 class="visually-hidden">«Седона»</h1>
       <section class="features">
-        <p class="five-features-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="five-features-content">Рассмотрим 5 причин, по кторым седона круче, чем Гранд Каньон</p>
+        <div class="five-features">
+          <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p>Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон</p>
+        </div>
         <h2 class="visually-hidden">Преимущества</h2>
           <ul class="features-list">
             <li class="features-item first-feature">
             <div class="container-feature">
               <h3 class="features-item-title">Настоящий городок</h3>
               <p class="features-item-number">-№1-</p>
-                <p class="features-item-conent">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <p class="features-item-conent">Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="container-feature-image">
-                <img src="img/preview-photo1.jpg" width="800" height="300">
-            </div>
-              <div class="properties">
-                <ul class="properties-list">
-                  <li class="properties-item">
-                    <div class="properties-item-image firstly">Изображение дома</div>
-                      <h3 class="properties-item-title">Жилье</h3>
-                      <p class="properties-item-content">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                  </li>
-                  <li class="properties-item">
-                    <div class="properties-item-image secondly">Изображение Бургера</div>
-                      <h3 class="properties-item-title">Еда</h3>
-                      <p class="properties-item-content">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                  </li>
-                  <li class="properties-item">
-                    <div class="properties-item-image thirdly">Изображение Сувенира</div>
-                      <h3 class="properties-item-title">Сувениры</h3>
-                      <p class="properties-item-content">Не только китайского, но и местного производства!</p>
-                  </li>
-                </ul>
-              </div>
-              </li>
+            <li class="container-feature-image">
+                <div></div>
+            </li>
+            </li>
             <li class="features-item second-feature">
-              <div class="container-feature-image">
-                <img src="img/preview-photo2.jpg" width="800" height="300">
-              </div>
+              <li class="container-feature-image">
+                <div></div>
+              </li>
               <div class="container-feature">
                 <h3 class="features-item-title">Там есть мост дьявола</h3>
                 <p class="features-item-number">-№2-</p>
@@ -93,6 +78,25 @@
                 <p class="features-item-number">-№5-</p>
                 <p class="features-item-content">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
+            </li>
+            <li class="properties">
+              <ul class="properties-list">
+                <li class="properties-item">
+                  <div class="properties-item-image firstly">Изображение дома</div>
+                    <h3 class="properties-item-title">Жилье</h3>
+                    <p class="properties-item-content">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </li>
+                <li class="properties-item">
+                  <div class="properties-item-image secondly">Изображение Бургера</div>
+                    <h3 class="properties-item-title">Еда</h3>
+                    <p class="properties-item-content">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+                <li class="properties-item">
+                  <div class="properties-item-image thirdly">Изображение Сувенира</div>
+                    <h3 class="properties-item-title">Сувениры</h3>
+                    <p class="properties-item-content">Не только китайского, но и местного производства!</p>
+                </li>
+              </ul>
             </li>
           </ul>
       </section>

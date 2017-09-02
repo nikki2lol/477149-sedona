@@ -1,6 +1,6 @@
 html,
 body {
-    maring: 0;
+    margin: 0;
     padding: 0;
     width: 1200px;
     font-family: "PT Sans", Arial, sans-serif;
@@ -24,6 +24,8 @@ a {
 .sorting,
 .catalog-list,
 .footer-social ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -52,11 +54,11 @@ a {
 
 .sorting a {
     color: #cacaca;
-    text-decoration: underline #81b3d2 dashed;
+    text-decoration: underline #81b3d2 dotted;
 }
 .sorting a:hover {
     color: #81b3d2;
-    text-decoration: underline #81b3d2 dashed;
+    text-decoration: underline #81b3d2 dotted;
 }
 
 .sorting a:focus {
@@ -67,14 +69,50 @@ a {
     color: #81b3d2;
 }
 
-.features p.five-features-title {
+.main-background {
+    width: 1200px;
+    height: 700px;
+    background-color: #ffffff;
+    background-image: url("../img/bg-intro-image.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 -55px;
+    margin-bottom: -246px;
+    margin-top: -10px;
+}
+
+.bg-text-container {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.bg-mask-container {
+    width: 1200px;
+    height: 40px;
+    padding-top: 25px;
+    background-image: url("../img/bg-intro-mask.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.five-features {
+    width: 1200px;
+    height: 210px;
+    background-color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.five-features p:first-child {
     font-size: 21px;
     font-weight: 700;
     text-height: 26px;
     text-align: center;
 }
 
-.features p.five-features-content {
+.five-features p:last-child {
     color: #333333;
     text-height: 26px;
     text-align: center;
@@ -82,10 +120,19 @@ a {
 
 .container-feature {
     width: 400px;
-    height: 300px;
+    height: 256px;
     background-color: #81b3d2;
     color: #ffffff;
     text-align: center;
+}
+
+.container-feature-image div {
+    width: 800px;
+    height: 256px;
+    background-image: url("../img/preview-photo1.jpg");
+    background-size: auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .first-feature h3,
@@ -97,7 +144,7 @@ a {
 
 .feature-item-container {
     width: 400px;
-    height: 255px;
+    height: 256px;
     background-color: #eeeeee;
     text-align: center;
 }
@@ -117,7 +164,7 @@ a {
 .properties-item-image {
     width: 75px;
     height: 75px;
-    background-image: url("img/sprite.png");
+    background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     background-size: 100%;
     border: 1px solid black;
@@ -240,13 +287,10 @@ a {
 
 /* стили для sedona-hotels.html */
 
-
-
 .background-image-filters {
     background-color: #333333;
     background-image: url("img/filter-background.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 .filters legend {
@@ -345,4 +389,36 @@ a.button-buy:hover {
 a.button-buy:focus {
     background-color: #503e33;
     color: rgba (255, 255, 255, 0.3)
+}
+
+/* сетки */
+.main-header {
+    padding: 0;
+    margin: 0;
+}
+
+.main-navigation {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+}
+
+.site-navigation {
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
