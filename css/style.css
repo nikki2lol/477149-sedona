@@ -118,7 +118,8 @@ a {
     text-align: center;
 }
 
-.container-feature {
+.first-feature,
+.second-feature {
     width: 400px;
     height: 256px;
     background-color: #81b3d2;
@@ -126,14 +127,21 @@ a {
     text-align: center;
 }
 
-.container-feature-image div {
+.preview-1 {
     width: 800px;
     height: 256px;
     background-image: url("../img/preview-photo1.jpg");
     background-size: auto;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
 }
+
+.preview-2 {
+    width: 800px;
+    height: 256px;
+    background-image: url("../img/preview-photo2.jpg");
+    background-size: auto;
+
+}
+
 
 .first-feature h3,
 .second-feature h3 {
@@ -142,7 +150,7 @@ a {
     font-weight: 700px;
 }
 
-.feature-item-container {
+.another-feature {
     width: 400px;
     height: 256px;
     background-color: #eeeeee;
@@ -166,32 +174,41 @@ a {
     height: 75px;
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    text-align: center;
     border: 1px solid black;
 }
 
 .firstly {
-    background-position:
+    background-position: 1px 0px;
 }
 
 .secondly {
-    background-position:
+    background-position: -72px 0px;
 }
 
 .thirdly {
-    background-position:
+    background-position: -147px 0px;
 }
-
 
 .appointment h2 {
     font-size: 30px;
     text-height: 36px;
     font-weight: 700;
     color: #000000;
+    text-align: center;
+}
+
+.appointment-container {
+    width: 570px;
+    height: 400px;
+    display: flex;
+    box-shadow: 0 0 10px 0 #333333;
 }
 
 .apointment p.apointment-content {
     text-height: 24px;
+    text-align: center;
 }
 
 .appointment button {
@@ -289,7 +306,7 @@ a {
 
 .background-image-filters {
     background-color: #333333;
-    background-image: url("img/filter-background.jpg");
+    background-image: url("../img/filter-background.jpg");
     background-repeat: no-repeat;
 }
 
@@ -421,4 +438,10 @@ a.button-buy:focus {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.properties-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

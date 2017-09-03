@@ -21,8 +21,6 @@
       </nav>
     </header>
 
-
-
     <main class="container">
 
       <div class="main-background">
@@ -39,60 +37,50 @@
         <h2 class="visually-hidden">Преимущества</h2>
           <ul class="features-list">
             <li class="features-item first-feature">
-            <div class="container-feature">
               <h3 class="features-item-title">Настоящий городок</h3>
               <p class="features-item-number">-№1-</p>
               <p class="features-item-conent">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-            </div>
-            <li class="container-feature-image">
+            </li>
+            <li class="preview-1">
                 <div></div>
             </li>
+            <li class="preview-2">
+              <div></div>
             </li>
             <li class="features-item second-feature">
-              <li class="container-feature-image">
-                <div></div>
-              </li>
-              <div class="container-feature">
                 <h3 class="features-item-title">Там есть мост дьявола</h3>
                 <p class="features-item-number">-№2-</p>
                 <p class="features-item-content">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-              </div>
             </li>
             <li class="features-item another-feature">
-              <div class="feature-item-container">
                 <h3 class="features-item-title">Небольшая площадь</h3>
                 <p class="features-item-number">-№3-</p>
                 <p class="features-item-content">Все достопримечательности находятся очень близко</p>
-              </div>
             </li>
             <li class="features-item another-feature">
-              <div class="feature-item-container">
                 <h3 class="features-item-title">Красивая дорога</h3>
                 <p class="features-item-number">-№4-</p>
                 <p class="features-item-content">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
-              </div>
             </li>
             <li class="features-item another-feature">
-              <div class="feature-item-container">
                 <h3 class="features-item-title">Мало туристов</h3>
                 <p class="features-item-number">-№5-</p>
                 <p class="features-item-content">Большинство едет в Гранд Каньон и толпится там</p>
-              </div>
             </li>
             <li class="properties">
               <ul class="properties-list">
                 <li class="properties-item">
-                  <div class="properties-item-image firstly">Изображение дома</div>
+                  <div class="properties-item-image firstly"></div>
                     <h3 class="properties-item-title">Жилье</h3>
                     <p class="properties-item-content">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="properties-item">
-                  <div class="properties-item-image secondly">Изображение Бургера</div>
+                  <div class="properties-item-image secondly"></div>
                     <h3 class="properties-item-title">Еда</h3>
                     <p class="properties-item-content">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="properties-item">
-                  <div class="properties-item-image thirdly">Изображение Сувенира</div>
+                  <div class="properties-item-image thirdly"></div>
                     <h3 class="properties-item-title">Сувениры</h3>
                     <p class="properties-item-content">Не только китайского, но и местного производства!</p>
                 </li>
@@ -102,10 +90,13 @@
       </section>
 
       <section class="appointment">
+
         <h2 class="appointment-title">Заинтересовались?</h2>
         <p class="appointment-content">Укажите предполагаемые даты поездки, и мы покажем вам наилучшие предложения гостиниц в Седоне</p>
+        
         <button value="Поиск гостиницы в седоне" name="hotel-look">Поиск гостиницы в Седоне</button>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="appointment-container">
+            <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
               <label for="date-checkin">Дата заезда:</label>
               <input type="date" name="date" id="date-checkin" value="2017-04-24">
                 <div class="calendar"></div>
@@ -129,7 +120,8 @@
               </div>
             </div>
             <input type="submit" value="Найти">
-        </form>
+          </form>
+        </div>
       </section>
 
       <section class="map">
