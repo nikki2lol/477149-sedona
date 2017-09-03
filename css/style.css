@@ -108,13 +108,13 @@ a {
 .five-features p:first-child {
     font-size: 21px;
     font-weight: 700;
-    text-height: 26px;
+    line-height: 26px;
     text-align: center;
 }
 
 .five-features p:last-child {
     color: #333333;
-    text-height: 26px;
+    line-height: 26px;
     text-align: center;
 }
 
@@ -146,7 +146,7 @@ a {
 .first-feature h3,
 .second-feature h3 {
     font-size: 21px;
-    text-height: 21px;
+    line-height: 21px;
     font-weight: 700px;
 }
 
@@ -165,7 +165,7 @@ a {
 .another-feature h3 {
     font-size: 21px;
     font-weight: 700;
-    text-height: 21px;
+    line-height: 21px;
     color: #000000;
 }
 
@@ -193,7 +193,7 @@ a {
 
 .appointment h2 {
     font-size: 30px;
-    text-height: 36px;
+    line-height: 36px;
     font-weight: 700;
     color: #000000;
     text-align: center;
@@ -207,7 +207,7 @@ a {
 }
 
 .apointment p.apointment-content {
-    text-height: 24px;
+    line-height: 24px;
     text-align: center;
 }
 
@@ -216,7 +216,7 @@ a {
     height: 85px;
     font-size: 21px;
     font-weight: 700;
-    text-height: 26px;
+    line-height: 26px;
     text-align: center;
     text-transform: uppercase;
     background-color: #766357;
@@ -233,7 +233,7 @@ a {
 }
 
 .appointment-form {
-    text-height: 26px;
+    line-height: 26px;
     font-weight: 700;
     color: #000000;
 }
@@ -273,7 +273,7 @@ a {
     color: #ffffff;
     font-size: 21px;
     font-weight: 700;
-    text-height: 26px;
+    line-height: 26px;
     text-transform: uppercase;
     border: 2px solid #ffffff;
     outline: none;
@@ -289,13 +289,13 @@ a {
 }
 
 .main-footer b {
-    text-height: 26px;
+    line-height: 26px;
 }
 
 .main-footer p.hashtag {
     font-size: 21px;
     font-weight: 700;
-    text-height: 26px;
+    line-height: 26px;
 }
 
 .footer-social {
@@ -312,13 +312,13 @@ a {
 
 .filters legend {
     font-size: 16px;
-    text-height: 21px;
+    line-height: 21px;
     font-weight: 700px;
     color: #FFFFFF;
 }
 
 .filters li {
-    text-height: 21px;
+    line-height: 21px;
     color: #FFFFFF;
 }
 
@@ -347,13 +347,13 @@ a {
 .catalog p.search-result {
     font-size: 21px;
     font-weight: 700;
-    text-height: 26px;
+    line-height: 26px;
 }
 
 .catalog p.sorting-title,
 .sort-parameter {
     font-size: 12px;
-    text-height: 18px;
+    line-height: 18px;
 }
 
 .description div.rating {
