@@ -366,7 +366,7 @@ input[type="radio"].visually-hidden {
     width: 230px;
 }
 
-.appointment input[type="text"] {
+.appointment input[type="number"] {
     width: 38px;
 
 }
