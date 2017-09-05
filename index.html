@@ -39,50 +39,66 @@
           <h2 class="visually-hidden">Преимущества</h2>
             <ul class="features-list">
               <li class="features-item first-feature">
-                  <h3 class="features-item-title">Настоящий городок</h3>
-                  <p class="features-item-number">-№1-</p>
-                  <p class="features-item-content">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                <div class="row">
+                  <div class="item-container">
+                    <h3 class="features-item-title">Настоящий городок</h3>
+                    <p class="features-item-number">-№1-</p>
+                    <p class="features-item-content">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                  </div>
+                </div>
               </li>
               <li class="properties">
                 <ul class="properties-list">
-                  <li class="properties-item house">
-                    <div class="properties-item-image firstly"></div>
+                  <li class="properties-item">
+                    <div class="house">
                       <h3 class="properties-item-title">Жилье</h3>
                       <p class="properties-item-content">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    </div>
                   </li>
-                  <li class="properties-item food">
-                    <div class="properties-item-image secondly"></div>
+                  <li class="properties-item">
+                    <div class="food">
                       <h3 class="properties-item-title">Еда</h3>
                       <p class="properties-item-content">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    </div>
                   </li>
-                  <li class="properties-item gifts">
-                    <div class="properties-item-image thirdly"></div>
+                  <li class="properties-item">
+                    <div class="gifts">
                       <h3 class="properties-item-title">Сувениры</h3>
                       <p class="properties-item-content">Не только китайского, но и местного производства!</p>
+                    </div>
                   </li>
                 </ul>
               </li>
               <li class="features-item second-feature">
-                  <h3 class="features-item-title">Там есть мост дьявола</h3>
-                  <p class="features-item-number">-№2-</p>
-                  <p class="features-item-content">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <div class="row row-content-right">
+                  <div class="content-item">
+                    <h3 class="features-item-title">Там есть мост дьявола</h3>
+                    <p class="features-item-number">-№2-</p>
+                    <p class="features-item-content">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                  </div>
+                </div>
               </li>
               <li class="features-item another-feature">
+                <div class="another-feature-1">
                   <h3 class="features-item-title">Небольшая площадь</h3>
                   <p class="features-item-number">-№3-</p>
                   <p class="features-item-content">Все достопримечательности находятся очень близко</p>
+                </div>
               </li>
               <li class="features-item another-feature">
+                <div class="another-feature-2">
                   <h3 class="features-item-title">Красивая дорога</h3>
                   <p class="features-item-number">-№4-</p>
                   <p class="features-item-content">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+                </div>
               </li>
               <li class="features-item another-feature">
+                <div class="another-feature-3">
                   <h3 class="features-item-title">Мало туристов</h3>
                   <p class="features-item-number">-№5-</p>
                   <p class="features-item-content">Большинство едет в Гранд Каньон и толпится там</p>
+                </div>
               </li>
-
             </ul>
         </section>
 
@@ -94,32 +110,31 @@
           <div class="button-form-container">
             <button class="search" value="Поиск гостиницы в седоне" name="hotel-look">Поиск гостиницы в Седоне</button>
                 <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-                  <p class="appointment-item">
+                  <div class="appointment-item">
                       <label for="date-checkin">Дата заезда:</label>
                       <input type="date" name="date" id="date-checkin" value="2017-04-24">
-                  </p>
-                  <p class="appointment-item">
+                  </div>
+                  <div class="appointment-item">
                       <label for="date-checkout">Дата выезда:</label>
                       <input type="date" name="date" id="date-checkout" value="2017-06-04">
-                  </p>
-                  <div class="half-width">
+                  </div>
+                  <div class="appointment-item">
                       <label for="number-adult">Взрослые:</label>
                       <div class="number-adult-current">
-                          <button>-</button>
+                          <button class="minus">-</button>
                           <input type="number" id="number-adult" placeholder="2">
-                          <button>+</button>
+                          <button class="plus">+</button>
                       </div>
                   </div>
-                  <div class="half-width">
+                  <div class="appointment-item">
                       <label for="number-children">Дети:</label>
                       <div class="number-children-current">
-                          <button>-</button>
+                          <button class="minus">-</button>
                           <input type="number" id="number-children" placeholder="0">
-                          <button>+</button>
-
+                          <button class="plus">+</button>
                       </div>
                   </div>
-                  <input type="submit" value="Найти">
+                  <input class="search-result" type="submit" value="Найти">
               </form>
 
           </div>
