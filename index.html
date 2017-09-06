@@ -102,29 +102,31 @@
           <div class="button-form-container">
             <button class="search" value="Поиск гостиницы в седоне" name="hotel-look">Поиск гостиницы в Седоне</button>
                 <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-                  <div class="appointment-item">
+                  <div class="appointment-item full-width">
                       <label for="date-checkin">Дата заезда:</label>
                       <input type="text" name="date" id="date-checkin" value="2017-04-24">
                   </div>
-                  <div class="appointment-item">
+                  <div class="appointment-item full-width">
                       <label for="date-checkout">Дата выезда:</label>
                       <input type="text" name="date" id="date-checkout" value="2017-06-04">
                   </div>
-                  <div class="appointment-item">
-                      <label for="number-adult">Взрослые:</label>
-                      <div class="number-adult-current">
-                          <button class="minus">-</button>
-                          <input type="number" id="number-adult" placeholder="2">
-                          <button class="plus">+</button>
-                      </div>
-                  </div>
-                  <div class="appointment-item">
-                      <label for="number-children">Дети:</label>
-                      <div class="number-children-current">
-                          <button class="minus">-</button>
-                          <input type="number" id="number-children" placeholder="0">
-                          <button class="plus">+</button>
-                      </div>
+                  <div class="appointment-item space">
+                    <div class="half-width">
+                        <label for="number-adult">Взрослые:</label>
+                        <div class="number-adult-current">
+                            <button class="minus">–</button>
+                            <input type="text" id="number-adult" placeholder="2">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                    <div class="half-width">
+                        <label for="number-children">Дети:</label>
+                        <div class="number-children-current">
+                            <button class="minus">–</button>
+                            <input type="text" id="number-children" placeholder="0">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
                   </div>
                   <input class="search-result" type="submit" value="Найти">
               </form>
