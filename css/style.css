@@ -98,7 +98,7 @@ input[type="radio"].visually-hidden {
 .main-header-logo {
     position: absolute;
     left: 0;
-    right: 0px;
+    right: 0;
     margin: 0 auto;
     width: 140px;
 
@@ -601,6 +601,7 @@ input[type="radio"].visually-hidden {
     outline: none;
     border: 0 solid transparent;
     padding: 6px 0 6px 13px;
+    position: relative;
 }
 
 .full-width input[type="text"]:hover {
@@ -610,6 +611,32 @@ input[type="radio"].visually-hidden {
 .full-width input[type="text"]:focus {
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
+}
+
+.calendar-1 {
+    position: absolute;
+    top: 62px;
+    right: 65px;
+    margin: 0 auto;
+    fill: #cacaca;
+}
+
+.calendar-2 {
+    position: absolute;
+    top: 128px;
+    right: 65px;
+    margin: 0 auto;
+    fill: #cacaca;
+}
+
+.calendar-1:hover,
+.calendar-2:hover {
+    fill: #000000;
+}
+
+.calendar-1:focus,
+.calendar-2:focus {
+    fill: #81b3d2;
 }
 
 .appointment input[type="submit"] {
@@ -692,12 +719,12 @@ input[type="radio"].visually-hidden {
     align-items: flex-start;
 }
 
-.logo-htmlacademy:hover {
-    color: #83b4d3;
+a:hover .logo-htmlacademy {
+    fill: #83b4d3;
 }
 
-.logo-htmlacademy:focus {
-    color: #bdbbbc;
+a:focus .logo-htmlacademy {
+    fill: #bdbbbc;
 }
 
 
