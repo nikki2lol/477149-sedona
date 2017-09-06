@@ -89,12 +89,18 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
 }
 
+/* Хедер */
+
+.main-navigation {
+    position: relative;
+}
+
 .main-header-logo {
     position: absolute;
     left: 0;
-    right: 520px;
+    right: 0px;
     margin: 0 auto;
-    width: 100px;
+    width: 140px;
 
 }
 
@@ -127,6 +133,8 @@ input[type="radio"].visually-hidden {
     padding-right: 72px;
 }
 
+/*Бэкграунд*/
+
 .main-background {
     width: 100%;
     background-color: #ffffff;
@@ -142,15 +150,17 @@ input[type="radio"].visually-hidden {
 
 .bg-mask-container {
     width: 100%;
-    height: 57px;
+    min-height: 57px;
     background-image: url("../img/bg-intro-mask.png");
     background-repeat: no-repeat;
     background-size: auto;
 }
 
+/* Блок с преимуществами */
+
+
 .five-features {
     width: 495px;
-    min-height: 100px;
     background-color: #ffffff;
     text-align: center;
     margin: 0;
@@ -179,7 +189,6 @@ input[type="radio"].visually-hidden {
 .properties-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
 .row {
@@ -194,25 +203,23 @@ input[type="radio"].visually-hidden {
     justify-content: flex-end;
 }
 
-.content-item {
-    width: 33.33333%;
+.item-container {
+    width: 33.333%;
+    text-align: center;
 }
 
 .first-feature {
     width: 100%;
-    min-height: 255px;
     background-image: url("../img/preview-photo1.jpg");
     background-size: 66.667% auto;
     background-position: right top;
     background-repeat: no-repeat;
     color: #ffffff;
-    text-align: center;
     background-color: #81b3d2;
 }
 
 .first-feature h3 {
     width: 122px;
-    min-height: 45px;
     margin: 0;
     font-size: 21px;
     line-height: 21px;
@@ -221,51 +228,44 @@ input[type="radio"].visually-hidden {
 }
 
 .first-feature p.features-item-number {
-    width: 50px;
-    min-height: 12px;
     margin: 0;
-    padding: 10px 175px 14px 175px;
+    padding-top: 10px;
+    padding-bottom: 14px;
 }
 
 .first-feature p.features-item-content {
     width: 280px;
-    min-height: 32px;
     margin: 0;
     padding: 14px 60px 55px 60px;
 }
 
 .second-feature {
     width: 100%;
-    min-height: 255px;
     background-image: url("../img/preview-photo2.jpg");
     background-size: 66.667% auto;
     background-position: left top;
     background-repeat: no-repeat;
     color: #ffffff;
-    text-align: center;
     background-color: #81b3d2;
 }
 
 .second-feature h3 {
     width: 152px;
-    min-height: 40px;
-    margin: 0;
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
+    margin: 0;
     padding: 45px 124px 10px 124px;
 }
 
 .second-feature p.features-item-number {
-    width: 50px;
-    min-height: 12px;
     margin: 0;
-    padding: 10px 175px 13px 175px;
+    padding-top: 10px;
+    padding-bottom: 13px;
 }
 
 .second-feature p.features-item-content {
     width: 302px;
-    min-height: 35px;
     margin: 0;
     padding: 13px 49px 60px 49px;
 }
@@ -276,7 +276,7 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
     line-height: 21px;
     color: #000000;
-    text-align: center;
+
 }
 
 
@@ -286,65 +286,27 @@ input[type="radio"].visually-hidden {
 
 .properties-item {
     width: 33.333%;
+    text-align: center;
+    position: relative;
 }
 
-.house h3 {
-    width: 67px;
-    min-height: 20px;
-    margin: 0;
-    text-align: center;
-    padding: 160px 165px 12px 168px;
-}
-
-.house p {
-    width: 255px;
-    min-height: 35px;
-    margin: 0;
-    text-align: center;
-    padding: 12px 73px 85px 75px;
-}
-
-.food h3 {
-    width: 40px;
-    min-height: 20px;
-    margin: 0;
-    text-align: center;
-    padding: 160px 181px 12px 181px;
-}
-
-.food p {
-    width: 285px;
-    min-height: 35px;
-    margin: 0;
-    text-align: center;
-    padding: 12px 58px 85px 58px;
-}
-
-.gifts h3 {
-    width: 103px;
-    min-height: 20px;
-    margin: 0;
-    text-align: center;
-    padding: 160px 149px 12px 149px;
-}
-
-.gifts p {
-    width: 272px;
-    min-height: 35px;
-    margin: 0;
-    text-align: center;
-    padding: 12px 63px 85px 63px;
+.properties-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
 }
 
 .house::before {
-    content: "";
-    position: absolute;
     background-image: url("../img/icon-1.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 76px;
     height: 72px;
-    border: 1px solid black;
+    margin: 0 auto;
+    top: 60px;
+
 }
 
 .food::before {
@@ -355,7 +317,8 @@ input[type="radio"].visually-hidden {
     background-size: 100%;
     width: 75px;
     height: 70px;
-    border: 1px solid black;
+    margin: 0 auto;
+    top: 60px;
 }
 
 .gifts::before {
@@ -366,7 +329,41 @@ input[type="radio"].visually-hidden {
     background-size: 100%;
     width: 64px;
     height: 76px;
-    border: 1px solid black;
+    margin: 0 auto;
+    top: 56px;
+}
+
+.house h3 {
+    margin: 0;
+    padding: 160px 0 12px 0;
+}
+
+.house p {
+    width: 255px;
+    margin: 0;
+    padding: 12px 73px 80px 75px;
+}
+
+.food h3 {
+    margin: 0;
+    padding: 160px 0 12px 0;
+}
+
+.food p {
+    width: 285px;
+    margin: 0;
+    padding: 12px 58px 80px 58px;
+}
+
+.gifts h3 {
+    margin: 0;
+    padding: 160px 0 12px 0;
+}
+
+.gifts p {
+    width: 272px;
+    margin: 0;
+    padding: 12px 63px 80px 63px;
 }
 
 .another-feature {
@@ -377,75 +374,60 @@ input[type="radio"].visually-hidden {
 
 .another-feature-1 h3 {
     width: 117px;
-    min-height: 40px;
     margin: 0;
-    text-align: center;
     padding: 45px 142px 12px 142px;
 }
 
 .another-feature-1 p.features-item-number {
-    width: 50px;
-    min-height: 12px;
     margin: 0;
-    text-align: center;
-    padding: 12px 176px 14px 176px;
+    padding-top: 12px;
+    padding-bottom: 14px;
 }
 
 .another-feature-1 p.features-item-content {
     width: 208px;
-    min-height: 35px;
     margin: 0;
-    text-align: center;
     padding: 14px 97px 60px 97px;
 }
 
 .another-feature-2 h3 {
     width: 100px;
-    min-height: 40px;
     margin: 0;
-    text-align: center;
     padding: 45px 150px 14px 150px;
 }
 
 .another-feature-2 p.features-item-number {
-    width: 50px;
-    min-height: 12px;
     margin: 0;
-    text-align: center;
-    padding: 14px 176px 14px 176px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
 .another-feature-2 p.features-item-content {
     width: 262px;
-    min-height: 35px;
     margin: 0;
-    text-align: center;
     padding: 14px 69px 60px 69px;
 }
 
 .another-feature-3 h3 {
     width: 100px;
-    min-height: 40px;
     margin: 0;
-    text-align: center;
     padding: 45px 151px 14px 151px;
 }
 
 .another-feature-3 p.features-item-number {
-    width: 50px;
-    min-height: 12px;
     margin: 0;
-    text-align: center;
-    padding: 14px 176px 14px 176px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
 .another-feature-3 p.features-item-content {
     width: 260px;
-    min-height: 35px;
     margin: 0;
-    text-align: center;
     padding: 14px 70px 60px 70px;
 }
+
+
+/* Форма "Заинтересоавались?"*/
 
 .appointment h2 {
     font-size: 30px;
@@ -459,28 +441,34 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-content {
-    width: 435px;
+    line-height: 24px;
+    width: 462px;
     text-align: center;
     margin: 0;
-    padding: 16px 382px 130px 382px;
+    padding: 16px 369px 45px 369px;
 }
 
 .button-form-container {
     width: 570px;
     background-color: #ffffff;
-    position: absolute;
+    position: relative;
     margin: 0;
-    top: 2165px;
-    left: 400px;
+    text-align: center;
+    margin-left: 315px;
+
 }
 
 .appointment-form {
     line-height: 26px;
     font-weight: 700;
     color: #000000;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    box-shadow: 0 0 10px 1px rgba(0, 1, 1, 0.15);
 }
 
 .appointment-item:first-child {
@@ -492,8 +480,6 @@ input[type="radio"].visually-hidden {
     width: 460px;
     padding: 14px 52px 14px 52px;
 }
-
-
 
 .minus {
     color: #a9a9a9;
@@ -526,6 +512,7 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     background-color: #766357;
     color: #ffffff;
+    border: 0 solid transparent;
 }
 
 .appointment button:hover {
@@ -537,18 +524,18 @@ input[type="radio"].visually-hidden {
     background-color: #503e33;
 }
 
-.appointment input[type="date"] {
+.appointment input[type="text"] {
     width: 350px;
     font: inherit;
     background-color: #f2f2f2;
     outline: none;
 }
 
-.appointment input[type="date"]:hover {
+.appointment input[type="text"]:hover {
     background-color: #ebebeb;
 }
 
-.appointment input[type="date"]:focus {
+.appointment input[type="text"]:focus {
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
 }
@@ -589,20 +576,39 @@ input[type="radio"].visually-hidden {
     color: rgba(255, 255, 255, 0.3);
 }
 
+/* Карта"*/
+
+
+
+/* Футер */
+
 .main-footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 36px;
 }
 
 .main-footer b {
     line-height: 26px;
+    margin-top: 6px;
+    margin-right: 8px;
 }
 
 .main-footer p.hashtag {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+}
+
+.footer-social ul {
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
 }
 
 .social-btn {
@@ -612,12 +618,6 @@ input[type="radio"].visually-hidden {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.footer-social ul {
-  display: flex;
-  width: 150px;
-  list-style: none;
 }
 
 .social-btn:hover {
@@ -630,10 +630,16 @@ input[type="radio"].visually-hidden {
 
 .footer-copyright {
     display: flex;
+    align-items: flex-start;
 }
 
+.logo-htmlacademy:hover {
+    color: #83b4d3;
+}
 
-
+.logo-htmlacademy:focus {
+    color: #bdbbbc;
+}
 
 
 
@@ -642,9 +648,11 @@ input[type="radio"].visually-hidden {
 /* стили для sedona-hotels.html */
 
 .background-image-filters {
+    width: 100%;
     background-color: #333333;
     background-image: url("../img/filter-background.jpg");
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .filters legend {
