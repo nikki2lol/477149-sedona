@@ -57,6 +57,10 @@ a {
     color: #766357;
 }
 
+.main-navigation a.current-page {
+    color: #766357;
+}
+
 .sorting a {
     color: #cacaca;
     text-decoration: underline #81b3d2 dotted;
@@ -68,10 +72,12 @@ a {
 
 .sorting a:focus {
     color: #000000;
+    text-decoration: none;
 }
 
-.sorting a:active {
+.sorting a.sort-current {
     color: #81b3d2;
+    text-decoration: none;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -144,7 +150,7 @@ input[type="radio"].visually-hidden {
 }
 
 .bg-text-container {
-    padding-top: 100px;
+    padding-top: 130px;
     text-align: center;
 }
 
@@ -223,7 +229,7 @@ input[type="radio"].visually-hidden {
     margin: 0;
     font-size: 21px;
     line-height: 21px;
-    font-weight: 700px;
+    font-weight: 700;
     padding: 45px 139px 10px 139px;
 }
 
@@ -591,8 +597,6 @@ input[type="radio"].visually-hidden {
     text-align: center;
 }
 
-
-
 .full-width input[type="text"] {
     width: 346px;
     height: 26px;
@@ -729,10 +733,7 @@ a:focus .logo-htmlacademy {
 
 
 
-
-
 /* стили для sedona-hotels.html */
-
 
 
 
@@ -742,53 +743,262 @@ a:focus .logo-htmlacademy {
     background-image: url("../img/filter-background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.filters fieldset {
+    border: 0 solid transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.filters fieldset:first-child {
+    margin-right: 120px
 }
 
 .filters legend {
     font-size: 16px;
     line-height: 21px;
-    font-weight: 700px;
+    font-weight: 700;
     color: #FFFFFF;
+    padding-bottom: 14px;
 }
 
 .filters li {
     line-height: 21px;
     color: #FFFFFF;
+    margin: 0;
+    padding-bottom: 12px;
+    padding-top: 12px;
 }
 
-.filter-option input[type="checkbox"],
-.filter-option input[type="checkbox"]:hover {
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 73px;
+    padding-right: 73px;
+/* ??? */
+
 
 }
-
-.filter-option input[type="checkbox"]:focus {
-
+.filter-container {
+    display: flex;
 }
 
-.filters button {
-    width: 132px;
-    height: 32px;
-    background-color: rgba(255, 255, 255, 0);
+
+.checkbox-family-1,
+.checkbox-family-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-checkbox,
+.main-checkbox:hover {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.main-checkbox:focus {
+    fill: #6a6a6a;
+}
+
+.main-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #FFFFFF;
+}
+
+/* сложный фильтр*/
+.filter-range {
+    width: 330px;
     color: #ffffff;
+    text-transform: uppercase;
+    justify-content: flex-end;
+}
+
+.filter-range-title {
+    margin-bottom: 9px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.price-controls {
+    position: relative;
+    height: 36px;
+    margin-bottom: 20px;
+    font-size: 0;
     border: 2px solid #ffffff;
+    border-radius: 2px;
 }
 
-.filters button:hover {
-    background-color: rgba(255, 255, 255, 1);
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+    width: 90px;
+    padding-left: 65px;
+}
+
+.price-controls input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+}
+
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
+.btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-transparent:hover {
     color: #000000;
+    background: #ffffff;
 }
 
-.catalog p.search-result {
+/*конец фильтра*/
+
+.head-catalog-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 28px 73px 30px 73px;
+}
+
+.search-result-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.sorting-title {
+    padding-right: 40px;
+}
+
+.sorting {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.sorting li {
+    padding-right: 30px;
+}
+
+.search-result {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    margin-right: 48px;
 }
 
-.catalog p.sorting-title,
+.sorting-title,
 .sort-parameter {
     font-size: 12px;
     line-height: 18px;
 }
+
+.arrows {
+    display: flex;
+}
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5.5px 11px 5.5px;
+    border-color: transparent transparent #cacaca transparent;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 5.5px 0 5.5px;
+    border-color: #cacaca transparent transparent transparent;
+}
+
+.current-arrow {
+
+}
+
+
 
 .description div.rating {
     width: 110px;
@@ -807,6 +1017,8 @@ a:focus .logo-htmlacademy {
 .description a:focus {
     color: #cacaca;
 }
+
+
 
 a.button-info {
     width: 110px;
