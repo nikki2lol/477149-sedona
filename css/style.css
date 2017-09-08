@@ -8,7 +8,7 @@ body {
     font-weight: 400;
     color: #333333;
     text-transform: uppercase;
-    background-color: white;
+    background-color: #f2f2f2;
 }
 
 a {
@@ -19,6 +19,8 @@ a {
     width: 1200px;
     padding-left: 6%;
     padding-right: 6%;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
 }
 
 .site-navigation,
@@ -95,8 +97,8 @@ input[type="radio"].visually-hidden {
 .site-navigation {
     display: flex;
     margin: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .site-navigation li:first-child {
@@ -129,10 +131,11 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/bg-intro-image.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: 0 -55px;
 }
 
 .bg-text-container {
-    padding-top: 130px;
+    padding-top: 77px;
     text-align: center;
 }
 
@@ -141,7 +144,7 @@ input[type="radio"].visually-hidden {
     min-height: 57px;
     background-image: url("../img/bg-intro-mask.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 100%;
 }
 
 /* Блок с преимуществами */
@@ -440,9 +443,8 @@ input[type="radio"].visually-hidden {
     width: 570px;
     background-color: #ffffff;
     position: relative;
-    margin: 0;
-    text-align: center;
-    margin-left: 315px;
+    margin: 0 auto;
+
 }
 
 .button-form-container button.search {
@@ -620,8 +622,8 @@ input[type="radio"].visually-hidden {
     fill: #000000;
 }
 
-.calendar-1:focus,
-.calendar-2:focus {
+.calendar-1:active,
+.calendar-2:active {
     fill: #81b3d2;
 }
 
@@ -777,6 +779,7 @@ a:focus .logo-htmlacademy {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .main-checkbox,
 .main-checkbox:hover {
     position: relative;
@@ -788,14 +791,39 @@ a:focus .logo-htmlacademy {
     fill: #6a6a6a;
 }
 
-.main-checkbox input[type="checkbox"] + .checkbox-indicator {
+.main-checkbox input {
+    display: none;
+}
+
+.checkbox-indicator {
+    display: block;
+    padding-left: 35px;
+    position: relative;
+    line-height: 20px;
+}
+
+.checkbox-indicator:before {
+    content: '';
+    width: 20px;
+    height: 20px;
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
-    width: 17px;
-    height: 17px;
-    border: 2px solid #FFFFFF;
+    margin: auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 10%;
 }
+
+.main-checkbox input:checked + .checkbox-indicator:before {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 10%;
+}
+
 
 /* сложный фильтр*/
 .filter-range {
@@ -1072,25 +1100,32 @@ a:focus .logo-htmlacademy {
     justify-content: space-between;
 }
 
-.stars-rating.four-stars {
-    width: 72px;
-    height: 18px;
+.star {
+    width: 18px;
+    height: 17px;
     background-image: url("../img/star.svg");
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: auto;
 }
 
+.four-stars,
+.three-stars,
+.two-stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
 .stars-rating.three-stars {
-    width: 54px;
-    height: 18px;
+
     background-image: url("../img/star.svg");
     background-repeat: repeat;
     background-size: auto;
 }
 
 .stars-rating.two-stars {
-    width: 36px;
-    height: 18px;
+
     background-image: url("../img/star.svg");
     background-repeat: repeat;
     background-size: auto;
