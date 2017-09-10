@@ -105,20 +105,20 @@ input[type="radio"].visually-hidden {
 .site-navigation li:first-child {
     width: 20%;
     text-align: left;
-    letter-spacing: 0.1px;
+
 
 }
 .site-navigation li:nth-child(2) {
     width: 20%;
     text-align: left;
-    letter-spacing: 0.1px;
+
     margin-right: 20%;
 }
 
 .site-navigation li:nth-child(3) {
     width: 20%;
     text-align: right;
-    letter-spacing: 0.5px;
+
 }
 .site-navigation li:last-child {
     width: 20%;
