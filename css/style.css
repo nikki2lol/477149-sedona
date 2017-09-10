@@ -20,6 +20,7 @@ a {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
     position: relative;
+    margin: 0 auto;
 }
 
 .site-navigation,
@@ -682,7 +683,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 35px 0 39px 0px;
+    padding: 36px 0 43px 0px;
     position: absolute;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.9);
@@ -693,7 +694,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 33px 0 39px 0px;;
+    padding: 34px 0 39px 0px;;
 }
 
 .hashtag {
@@ -740,13 +741,14 @@ input[type="radio"].visually-hidden {
     width: 33.333333%;
     text-align: center;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
 .footer-copyright a {
     display: block;
     font-size: 0;
+    height: 41px;
 }
 
 .footer-copyright img {
@@ -755,6 +757,7 @@ input[type="radio"].visually-hidden {
 
 .author {
     line-height: 26px;
+    padding-right: 6px;
 }
 
 
@@ -1238,7 +1241,7 @@ a.sort-current  {
 
 .button-buy:focus {
     background-color: #503e33;
-    color: rgba (255, 255, 255, 0.3)
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .bonus-catalog-content {
