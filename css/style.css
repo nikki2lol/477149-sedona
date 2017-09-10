@@ -99,20 +99,19 @@ input[type="radio"].visually-hidden {
     justify-content: flex-start;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 14px 6% 16px 6%;
+    padding: 14px 0 16px 0;
 }
 
 .site-navigation li:first-child {
     width: 20%;
     text-align: left;
-
-
+    margin-left: 6%;
 }
+
 .site-navigation li:nth-child(2) {
     width: 20%;
     text-align: left;
-
-    margin-right: 20%;
+    margin-right: 8%;
 }
 
 .site-navigation li:nth-child(3) {
