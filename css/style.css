@@ -163,6 +163,7 @@ input[type="radio"].visually-hidden {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    color: #000000;
     text-align: center;
     margin: 0 auto;
     padding-top: 60px;
@@ -524,13 +525,12 @@ input[type="radio"].visually-hidden {
 
 .full-width input[type="text"] {
     width: 346px;
-    height: 26px;
+    min-height: 22px;
     font: inherit;
     background-color: #f2f2f2;
     outline: none;
-    border: 0 solid transparent;
-    margin: 1px auto;
-    padding: 6px 0 6px 13px;
+    border: 2px solid transparent;
+    padding: 4px 0 4px 13px;
     justify-content: flex-end;
 }
 
@@ -539,8 +539,6 @@ input[type="radio"].visually-hidden {
 }
 
 .full-width input[type="text"]:focus {
-    width: 342px;
-    height: 22px;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
 }
@@ -602,6 +600,7 @@ input[type="radio"].visually-hidden {
 
 .minus {
     width: 38px;
+    min-height: 26px;
     color: #a9a9a9;
     background: #f2f2f2;
     border: 0 solid transparent;
@@ -621,6 +620,7 @@ input[type="radio"].visually-hidden {
 
 .plus {
     width: 38px;
+    min-height: 26px;
     color: #a9a9a9;
     background: #f2f2f2;
     border: 0 solid transparent;
@@ -640,6 +640,7 @@ input[type="radio"].visually-hidden {
 
 .half-width input[type="text"] {
     width: 38px;
+    min-height: 26px;
     background-color: #f2f2f2;
     color: #000000;
     border: 0 solid transparent;
@@ -649,11 +650,11 @@ input[type="radio"].visually-hidden {
 .appointment input[type="submit"] {
     width: 460px;
     height: 58px;
-    background-color: #81b3d2;
-    color: #ffffff;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    color: #ffffff;
+    background-color: #81b3d2;
     text-transform: uppercase;
     border: 0 solid transparent;
     outline: none;
@@ -673,6 +674,7 @@ input[type="radio"].visually-hidden {
 
 .map p {
     margin: 0 auto;
+    background-color: #f2f1ef;
 }
 
 
@@ -702,6 +704,7 @@ input[type="radio"].visually-hidden {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    color: #000000;
     text-align: center;
 }
 
@@ -757,11 +760,9 @@ input[type="radio"].visually-hidden {
 
 .author {
     line-height: 26px;
+    color: #000000;
     padding-right: 6px;
 }
-
-
-
 
 a:hover .logo-htmlacademy {
     fill: #83b4d3;
@@ -770,7 +771,6 @@ a:hover .logo-htmlacademy {
 a:focus .logo-htmlacademy {
     fill: #bdbbbc;
 }
-
 
 
 /* стили для sedona-hotels.html */
@@ -872,6 +872,12 @@ a:focus .logo-htmlacademy {
     background-size: 100%;
 }
 
+.checkbox-indicator:before:disabled {
+    background-image: url("../img/checkbox-off-block.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 .point:checked + .checkbox-indicator:before {
     width: 26px;
     height: 23px;
@@ -920,7 +926,7 @@ a:focus .logo-htmlacademy {
 .price-controls label {
     display: inline-block;
     font-size: 14px;
-    line-height: 32px;
+    line-height: 21px;
     vertical-align: top;
     cursor: pointer;
 }
@@ -929,14 +935,16 @@ a:focus .logo-htmlacademy {
     width: 90px;
     padding-left: 66px;
 }
+
 .price-controls .max-price {
     width: 90px;
     padding-left: 58px;
-
 }
 
 .price-controls input {
     width: 50px;
+    min-height: 21px;
+    padding-top: 7px;
     margin: 0;
     color: inherit;
     font: inherit;
@@ -1017,6 +1025,7 @@ a:focus .logo-htmlacademy {
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
+    flex-grow: 1;
 }
 
 .sorting-title {
@@ -1200,7 +1209,7 @@ a.sort-current  {
     line-height: 21px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -1286,6 +1295,7 @@ a.sort-current  {
 
 
 .rating {
+    min-width: 110px;
     background-color: #f2f2f2;
     margin: 0 auto;
     text-align: center;
