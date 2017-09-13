@@ -506,7 +506,7 @@ input[type="radio"].visually-hidden {
 
 .appointment-item:nth-child(2) {
     margin: 0 auto;
-    padding: 14px 0 14px 0;
+    padding: 14px 0 17px 0;
     position: relative;
 }
 
@@ -517,6 +517,7 @@ input[type="radio"].visually-hidden {
 
 .appointment-name {
     min-width: 112px;
+    letter-spacing: 0.3px;
 }
 
 .appointment-child {
@@ -530,8 +531,7 @@ input[type="radio"].visually-hidden {
     background-color: #f2f2f2;
     outline: none;
     border: 2px solid transparent;
-    padding: 4px 0 4px 13px;
-    justify-content: flex-end;
+    padding: 4px 40px 4px 13px;
 }
 
 .full-width input[type="text"]:hover {
@@ -553,7 +553,7 @@ input[type="radio"].visually-hidden {
 
 .calendar-2 {
     position: absolute;
-    top: 21px;
+    top: 23px;
     right: 10px;
     margin: 0 auto;
     fill: #a9a9a9;
@@ -604,9 +604,9 @@ input[type="radio"].visually-hidden {
     color: #a9a9a9;
     background: #f2f2f2;
     border: 0 solid transparent;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 24px;
 }
 
 .minus:hover {
@@ -624,9 +624,9 @@ input[type="radio"].visually-hidden {
     color: #a9a9a9;
     background: #f2f2f2;
     border: 0 solid transparent;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 24px;
 }
 
 .plus:hover {
@@ -645,6 +645,7 @@ input[type="radio"].visually-hidden {
     color: #000000;
     border: 0 solid transparent;
     text-align: center;
+    font: inherit;
 }
 
 .appointment input[type="submit"] {
@@ -685,7 +686,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 36px 0 43px 0px;
+    padding: 36px 0 42px 0px;
     position: absolute;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.9);
@@ -761,7 +762,7 @@ input[type="radio"].visually-hidden {
 .author {
     line-height: 26px;
     color: #000000;
-    padding-right: 6px;
+    padding-right: 8px;
 }
 
 a:hover .logo-htmlacademy {
@@ -872,16 +873,26 @@ a:focus .logo-htmlacademy {
     background-size: 100%;
 }
 
-.checkbox-indicator:before:disabled {
-    background-image: url("../img/checkbox-off-block.svg");
+.main-checkbox input[type="checkbox"]:checked + .checkbox-indicator:before {
+    width: 26px;
+    height: 23px;
+    background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-.point:checked + .checkbox-indicator:before {
+.point:disabled + .checkbox-indicator:before {
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/checkbox-on-block.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.point:checked:disabled + .checkbox-indicator:before {
     width: 26px;
     height: 23px;
-    background-image: url("../img/checkbox-on.svg");
+    background-image: url("../img/checkbox-off-block.svg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
