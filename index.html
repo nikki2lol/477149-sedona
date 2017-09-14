@@ -100,7 +100,7 @@
           <p class="appointment-content">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
           <div class="button-form-container">
-            <button class="search" value="Поиск гостиницы в седоне" name="hotel-look">Поиск гостиницы в Седоне</button>
+            <a href="#" class="search" value="Поиск гостиницы в седоне" name="hotel-look">Поиск гостиницы в Седоне</a>
                 <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
                   <div class="appointment-item full-width">
                       <label class="appointment-name" for="date-checkin">Дата заезда:</label>
@@ -122,17 +122,17 @@
                     <div class="half-width">
                         <label class="appointment-name" for="number-adult">Взрослые:</label>
                         <div class="number-adult-current">
-                            <button class="minus" title="—"><span class="visually-hidden">–</span>–</button>
+                            <button class="minus" title="—"><span class="visually-hidden">Уменьшить количество «—»</span>–</button>
                             <input type="text" id="number-adult" value="2">
-                            <button class="plus" title="+"><span class="visually-hidden">+</span>+</button>
+                            <button class="plus" title="+"><span class="visually-hidden">Увеличить количество «+»</span>+</button>
                         </div>
                     </div>
                     <div class="half-width">
                         <label class="appointment-child" for="number-children">Дети:</label>
                         <div class="number-children-current">
-                            <button class="minus" title="—"><span class="visually-hidden">–</span>–</button>
+                            <button class="minus" title="—"><span class="visually-hidden">Уменьшить количество «—»</span>–</button>
                             <input type="text" id="number-children" value="0">
-                            <button class="plus" title="+"><span class="visually-hidden">+</span>+</button>
+                            <button class="plus" title="+"><span class="visually-hidden">Увеличить количество «+»</span>+</button>
                         </div>
                     </div>
                   </div>
@@ -144,9 +144,8 @@
 
         <section class="map">
           <h2 class="visually-hidden">Месторасположение Седоны</h2>
-          <p class="map-content">
-            <img src="img/map.jpg" width="1200" height="593" alt="Седона находится по адресу США, Штат Аризона 34°51′36″ с. ш. 111°47′21″ з. д.. Почтовый индекс: 86336">
-          </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26192.971454439496!2d-111.80998761209258!3d34.853176006564624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1505427977724" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <p class="map-content">  <img src="img/map.jpg" width="1200" height="593" alt="Седона находится по адресу США, Штат Аризона 34°51′36″ с. ш. 111°47′21″ з. д.. Почтовый индекс: 86336"></p>
         </section>
       </main>
 
@@ -174,5 +173,14 @@
         </div>
       </footer>
     </div>
+      <script>
+          var link = document.querySelector(".search");
+          var popup = document.querySecector(".appointment-form");
+
+          link.addEventListener("click", function(evt){
+            evt.preventDefault();
+            popup.classList.toogle("appointment-form-closed");
+          });
+      </script>
   </body>
 </html>

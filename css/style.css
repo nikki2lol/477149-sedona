@@ -449,15 +449,20 @@ input[type="radio"].visually-hidden {
 
 .button-form-container {
     width: 570px;
+    height: 85px;
     background-color: #ffffff;
     position: relative;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.button-form-container button.search {
+.button-form-container a.search {
     width: 100%;
-    height: 85px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-family: inherit;
     font-size: 21px;
     font-weight: 700;
@@ -469,11 +474,11 @@ input[type="radio"].visually-hidden {
     border: 0 solid transparent;
 }
 
-.button-form-container button.search:hover {
+.button-form-container a.search:hover {
     background-color: #604e43;
 }
 
-.button-form-container button.search:focus {
+.button-form-container a.search:focus {
     color: rgba(255, 255, 255, 0.3);
     background-color: #503e33;
 }
@@ -485,10 +490,16 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
     position: absolute;
     top: 100%;
+    left: 0;
+    right: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.appointment-form-closed {
+    display: none;
 }
 
 .appointment-item {
@@ -884,7 +895,7 @@ a:focus .logo-htmlacademy {
 .point:disabled + .checkbox-indicator:before {
     width: 23px;
     height: 23px;
-    background-image: url("../img/checkbox-on-block.svg");
+    background-image: url("../img/checkbox-off-block.svg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -892,7 +903,7 @@ a:focus .logo-htmlacademy {
 .point:checked:disabled + .checkbox-indicator:before {
     width: 26px;
     height: 23px;
-    background-image: url("../img/checkbox-off-block.svg");
+    background-image: url("../img/checkbox-on-block.svg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
