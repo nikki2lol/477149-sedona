@@ -1,7 +1,7 @@
 var link = document.querySelector(".search");
-var popup = document.querySecector(".appointment-form");
+var popup = document.querySelector(".appointment-form");
 
 link.addEventListener("click", function(evt){
   evt.preventDefault();
-  popup.classList.toogle("appointment-form-closed");
+  popup.classList.toggle("appointment-form-closed");
 });
