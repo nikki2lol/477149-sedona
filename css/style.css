@@ -438,6 +438,8 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 10px;
+    position: relative;
+    z-index: 2;
 }
 
 .appointment-content {
@@ -445,18 +447,19 @@ input[type="radio"].visually-hidden {
     text-align: center;
     margin: 0 auto;
     padding: 15px 0 47px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .button-form-container {
     width: 570px;
     height: 85px;
     background-color: #ffffff;
-    position: relative;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    position: relative;
 }
 
 .button-form-container a.search {
@@ -472,6 +475,7 @@ input[type="radio"].visually-hidden {
     background-color: #766357;
     color: #ffffff;
     border: 0 solid transparent;
+    z-index: 2;
 }
 
 .button-form-container a.search:hover {
@@ -489,29 +493,22 @@ input[type="radio"].visually-hidden {
     color: #000000;
     background-color: #ffffff;
     position: absolute;
+    z-index: 1;
     top: 100%;
     left: 0;
     right: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    z-index: 2;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-    animation-name: invis;
-    animation-duration: 2s;
-}
-
-@keyframes invis {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    transform: rotateX(0);
+    transition: 1s all;
+    z-index: 1;
 }
 
 .appointment-form-closed {
-    display: none;
+    transform: rotateX(90deg);
+    top: -150%;
 }
 
 .appointment-item {
