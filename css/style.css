@@ -508,7 +508,7 @@ input[type="radio"].visually-hidden {
 
 .appointment-form-closed {
     transform: rotateX(90deg);
-    top: -150%;
+    top: -130%;
 }
 
 .appointment-item {
